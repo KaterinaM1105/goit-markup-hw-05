@@ -17,10 +17,12 @@
   --gradient-color: rgba(47, 48, 58, 0.4);
   --social-links-color: #afb1b8;
   --footer-social-links: rgba(255, 255, 255, 0.1);
+  /* Overlays */
   --overlay-color: rgba(0, 0, 0, 0.2);
   --portfolio-overlay: rgba(33, 150, 243, 0.9);
   --overlay-text: rgba(255, 255, 255, 1);
   --close-border-color: 1px solid rgba(0, 0, 0, 0.1);
+  --services-overlay: rgba(47, 48, 58, 0.8);
 }
 *,
 *::before,
@@ -355,6 +357,30 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+.services-overlay {
+  position: relative;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 27px 0;
+  font-size: 14px;
+  font-weight: 700px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  background-color: var(--services-overlay);
+  color: var(--overlay-text);
+  width: 370px;
+  height: 70px;
 }
 /* ======= END SERVICES ======= */
 /* ======== OUR TEAM ========*/
