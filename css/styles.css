@@ -111,7 +111,7 @@ img {
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   position: absolute;
@@ -164,7 +164,7 @@ img {
 
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-svg-icon {
   display: flex;
@@ -468,10 +468,11 @@ img {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-item {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-svg {
   width: 20px;
@@ -510,8 +511,8 @@ img {
   height: 90px;
   border: 1px solid var(--social-links-color);
   border-radius: 4px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item {
   display: flex;
@@ -520,7 +521,7 @@ img {
 .clients-logo {
   display: flex;
   fill: var(--social-links-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
@@ -551,8 +552,8 @@ img {
 
   text-align: center;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-title:hover,
 .button-title:focus {
@@ -607,7 +608,7 @@ img {
 
   margin-bottom: 4px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item {
   color: var(--primary-text-color);
@@ -640,7 +641,8 @@ img {
   margin-bottom: 0;
 }
 .portfolio-title {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms linear,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-title:hover,
 .portfolio-title:focus {
@@ -682,7 +684,7 @@ img {
   height: 100%;
 
   transform: translateY(100%);
-  transition: color 250ms linear;
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ======== END PORTFOLIO ======== */
 /* ======= CONTACTS ========= */
@@ -704,7 +706,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.03em;
   padding-top: 20px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address:hover,
 .address:focus {
@@ -719,7 +721,7 @@ img {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-details:hover,
 .contact-details:focus {
@@ -752,7 +754,8 @@ img {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-item {
   margin-left: 10px;
@@ -772,6 +775,6 @@ img {
 .social-list-item:hover .footer-social-svg,
 .social-list-item:focus .social-list-svg {
   fill: var(--white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ======= END JOIN US ========= */
