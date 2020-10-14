@@ -111,7 +111,7 @@ img {
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   position: absolute;
@@ -164,7 +164,7 @@ img {
 
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-svg-icon {
   display: flex;
@@ -173,6 +173,7 @@ img {
 }
 .contacts-item .contacts-svg-icon {
   fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-item:hover .contacts-svg-icon,
 .contacts-item:focus .contacts-svg-icon {
@@ -233,7 +234,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--overlay-color);
-  transition: all 250ms linear;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -468,16 +469,16 @@ img {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: background-color 250ms linear,
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-item {
-  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-svg {
   width: 20px;
   height: 20px;
   fill: var(--social-links-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-item:hover .social-list-svg,
 .social-list-item:focus .social-list-svg {
@@ -511,8 +512,7 @@ img {
   height: 90px;
   border: 1px solid var(--social-links-color);
   border-radius: 4px;
-  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item {
   display: flex;
@@ -521,7 +521,7 @@ img {
 .clients-logo {
   display: flex;
   fill: var(--social-links-color);
-  transition: fill 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
@@ -552,8 +552,8 @@ img {
 
   text-align: center;
   padding: 6px 22px;
-  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms linear, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-title:hover,
 .button-title:focus {
@@ -608,7 +608,7 @@ img {
 
   margin-bottom: 4px;
 
-  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item {
   color: var(--primary-text-color);
@@ -641,8 +641,7 @@ img {
   margin-bottom: 0;
 }
 .portfolio-title {
-  transition: box-shadow 250ms linear,
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-title:hover,
 .portfolio-title:focus {
@@ -706,7 +705,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.03em;
   padding-top: 20px;
-  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address:hover,
 .address:focus {
@@ -721,7 +720,7 @@ img {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
-  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-details:hover,
 .contact-details:focus {
@@ -754,8 +753,7 @@ img {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: background-color 250ms linear,
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-item {
   margin-left: 10px;
@@ -767,6 +765,7 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -775,6 +774,5 @@ img {
 .social-list-item:hover .footer-social-svg,
 .social-list-item:focus .social-list-svg {
   fill: var(--white-color);
-  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ======= END JOIN US ========= */
