@@ -164,7 +164,7 @@ img {
 
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-svg-icon {
   display: flex;
@@ -552,8 +552,8 @@ img {
 
   text-align: center;
   padding: 6px 22px;
-  transition: color 250ms linear, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms linear, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms box-shadow;
 }
 .button-title:hover,
 .button-title:focus {
